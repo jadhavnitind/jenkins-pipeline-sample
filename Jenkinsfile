@@ -41,7 +41,7 @@ def getVersion() {
           if ((line =~ /version (.*)/).count > 0) {
             echo line
             def m = (line =~ /version (.*)/)[0]
-            echo m[1].replaceAll('"','')
+            echo m[1].replaceAll('"','').trim
             return m[1].replaceAll('"','')
           }
       }
