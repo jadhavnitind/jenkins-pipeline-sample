@@ -26,7 +26,7 @@ node {
     stage('Build') {
         echo 'Building....'
         artifactVersion=getVersion()
-        echo "Artifact version" + getVersion()
+        echo "Artifact version" + getVersion(m[1].replaceAll('"',''))
     }
     stage('Test') {
         echo 'Building....'
