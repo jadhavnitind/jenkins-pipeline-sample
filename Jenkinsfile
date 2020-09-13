@@ -26,7 +26,6 @@ node {
     stage('Build') {
         echo 'Building....'
         artifactVersion=getVersion()
-        echo "This is the artifact version : ${artifactVersion}"
     }
     stage('Test') {
         echo 'Building....'
